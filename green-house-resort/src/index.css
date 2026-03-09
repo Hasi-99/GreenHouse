@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+/* Theme Configuration for Tailwind v4 */
+@theme {
+  --color-forest-bg: var(--color-bg);
+  --color-forest-text: var(--color-text);
+  --color-forest-primary: var(--color-primary);
+  --color-forest-secondary: var(--color-secondary);
+  --color-forest-accent: var(--color-accent);
+}
+
+@layer base {
+  /* 1. Classic Forest Theme */
+  .theme-classic {
+    --color-bg: #f4f7f4;
+    --color-text: #1a2e1a;
+    --color-primary: #2d5a27;
+    --color-secondary: #8b5a2b;
+    --color-accent: #e6b981;
+  }
+  .theme-classic.dark {
+    --color-bg: #121c12;
+    --color-text: #e0ebe0;
+    --color-primary: #3f7a38;
+    --color-secondary: #a67b4c;
+  }
+
+  /* 2. Modern Minimalist Woods Theme */
+  .theme-modern {
+    --color-bg: #fafafa;
+    --color-text: #333333;
+    --color-primary: #4a5d4e;
+    --color-secondary: #dcd7c9;
+    --color-accent: #a2b29f;
+  }
+  .theme-modern.dark {
+    --color-bg: #1e1e1e;
+    --color-text: #f0f0f0;
+    --color-primary: #7d8f81;
+    --color-secondary: #4a4a4a;
+  }
+
+  /* 3. Luxury Eco-Resort Theme */
+  .theme-luxury {
+    --color-bg: #fcfbf9;
+    --color-text: #2c3531;
+    --color-primary: #116466;
+    --color-secondary: #d1e8e2;
+    --color-accent: #d9b08c;
+  }
+  .theme-luxury.dark {
+    --color-bg: #121514;
+    --color-text: #d9d9d9;
+    --color-primary: #248f91;
+    --color-secondary: #1a2e2a;
+  }
+
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    transition: background-color 0.3s, color 0.3s;
+  }
+}
+
